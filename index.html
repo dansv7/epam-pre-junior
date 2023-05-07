@@ -2,133 +2,154 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Traveling with us</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling with us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Traveling with us</h1>
-    <nav>
-      <ul>
-        <li> <a href="#about">About</a></li>
-        <li> <a href="#plan_tour">Plan a tour</a></li>
-        <li> <a href="#order_tour">Order Tour</a></li>
-        <li> <a href="#experiences">Experiences</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="about">
-      <div>
-        <div>
-          <h2>We help discover amazing destinations for you</h2>
-          <ul>
-            <li>Experience diverse cultures and traditions</li>
-            <li>Visit world-renowned landmarks and natural wonders</li>
-            <li>Explore hidden gems off the beaten path</li>
-            <li>Immerse yourself in local cuisines and flavors</li>
-            <li>Create unforgettable memories with loved ones</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="plan_tour">
-      <div>
-        <div>
-          <h2>Plan Your Perfect Trip</h2>
-          <ul>
-            <li>Get personalized recommendations based on your preferences</li>
-            <li>Compare prices and find the best deals</li>
-            <li>Book flights, accommodations, and activities seamlessly</li>
-            <li>Stay organized with itineraries and travel documents</li>
-            <li>Enjoy peace of mind with 24/7 customer support</li>
-          </ul>
-        </div>
-        <button>Plan a tour</button>
-      </div>
-    </section>
-    <section id="order_tour">
-      <div>
-        <img src="img/bali.jpg" alt="Mystical Bali Adventure">
-        <h3>Mystical Bali Adventure</h3>
-        <p>
-          Explore the enchanting island of Bali, with its lush jungles, vibrant culture, and ancient temples. Visit the
-          iconic Tanah Lot temple, hike to the summit of Mount Batur, and unwind on the pristine beaches of Nusa Dua.
+    <header class="header">
+        <h1 class="header__title">Traveling with us</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"> <a href="#about" class="header__nav-link">About</a></li>
+                <li class="header__nav-item"> <a href="#plan_tour" class="header__nav-link">Plan a tour</a></li>
+                <li class="header__nav-item"> <a href="#order_tour" class="header__nav-link">Order Tour</a></li>
+                <li class="header__nav-item"> <a href="#experience" class="header__nav-link">Experiences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section id="about" class="section section-1">
+            <div class="section__content">
+                <div class="section__text">
+                    <h2 class="section__title">We help discover amazing destinations for you</h2>
+                    <ul class="section__list">
+                        <li>Experience diverse cultures and traditions</li>
+                        <li>Visit world-renowned landmarks and natural wonders</li>
+                        <li>Explore hidden gems off the beaten path</li>
+                        <li>Immerse yourself in local cuisines and flavors</li>
+                        <li>Create unforgettable memories with loved ones</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="plan_tour">
+            <div class="section__content">
+                <div class="section__text">
+                    <h2 class="section__title">Plan Your Perfect Trip</h2>
+                    <ul class="section__list">
+                        <li>Get personalized recommendations based on your preferences</li>
+                        <li>Compare prices and find the best deals</li>
+                        <li>Book flights, accommodations, and activities seamlessly</li>
+                        <li>Stay organized with itineraries and travel documents</li>
+                        <li>Enjoy peace of mind with 24/7 customer support</li>
+                    </ul>
+                </div>
+                <button>Plan a tour</button>
+            </div>
+        </section>
+
+        <section id="order_tour" class="tour-cards">
+            <div class="tour-card">
+                <img src="img/bali.jpg" alt="Mystical Bali Adventure" class="tour-card__image">
+                <h3 class="tour-card__title">Mystical Bali Adventure</h3>
+                <p class="tour-card__description">
+                    Explore the enchanting island of Bali, with its lush jungles, vibrant culture, and ancient temples.
+                    Visit the
+                    iconic Tanah Lot temple, hike to the summit of Mount Batur, and unwind on the pristine beaches of
+                    Nusa Dua.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button_buy">
+                        Buy Tour
+                    </button>
+                    <button class="tour-card__button tour-card__button_info">
+                        More Info
+                    </button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="img/paris.jpg" alt="Paris" class="tour-card__image">
+                <h3 class="tour-card__title">Romantic Paris Escape</h3>
+                <p class="tour-card__description">Immerse yourself in the beauty and charm of the City of Love. Stroll
+                    along the
+                    Seine, marvel at the
+                    architectural masterpiece of the Eiffel Tower, and indulge in the world-famous French cuisine at
+                    charming
+                    cafes and bistros.</p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button_buy">
+                        Buy Tour
+                    </button>
+                    <button class="tour-card__button tour-card__button_info">
+                        More Info
+                    </button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src=" img/tokyo.jpg" alt="Tokyo" class="tour-card__image">
+                <h3 class="tour-card__title">Futuristic Tokyo Odyssey</h3>
+                <p class="tour-card__description">Discover the captivating blend of tradition and innovation in Tokyo.
+                    Experience the city's bostlink streeds
+                    and neon-lit nights, visit ancient temples and shrines, and savor the exquisite flavors of Japenese
+                    cuisine.
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button_buy">
+                        Buy Tour
+                    </button>
+                    <button class="tour-card__button tour-card__button_info">
+                        More Info
+                    </button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src=" img/kharkiv.jpg" alt="kharkiv" class="tour-card__image">
+                <h3 class="tour-card__title">Kharkiv is the city of students</h3>
+                <p class="tour-card__description">The most popular city of Ukraine among students. A lot of foreigners
+                    visit
+                    Kharkiv to get higher education
+                </p>
+                <div class="tour-card__buttons">
+                    <button class="tour-card__button tour-card__button_buy">
+                        Buy Tour
+                    </button>
+                    <button class="tour-card__button tour-card__button_info">
+                        More Info
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="section-experiences">
+            <div class="section-experiences__content">
+                <div class="section-experiences__text">
+                    <h2 class="section-experiences__title">Share Your Experiences</h2>
+                    <ul class="section-experiences__list">
+                        <li>Connect with fellow travelers around the world</li>
+                        <li>Share your stories, tips, and recommendations</li>
+                        <li>Upload photos and videos of your adventures</li>
+                        <li> Participate in forums and discussions</li>
+                        <li>Inspire others to embark on their own journeys</li>
+                    </ul>
+                </div>
+                <button class="section-experiences__button">Share</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Traveling with us &copy; 2023. All Rights Reserved.
         </p>
-        <div>
-          <button>
-            Buy Tour
-          </button>
-          <button>
-            More Info
-          </button>
-        </div>
-      </div>
-      <div>
-        <img src="img/paris.jpg" alt="Paris">
-        <h3>Romantic Paris Escape</h3>
-        <p>Immerse yourself in the beauty and charm of the City of Love. Stroll along the Seine, marvel at the
-          architectural masterpiece of the Eiffel Tower, and indulge in the world-famous French cuisine at charming
-          cafes and bistros.</p>
-        <div>
-          <button>
-            Buy Tour
-          </button>
-          <button>
-            More Info
-          </button>
-        </div>
-      </div>
-      <div>
-        <img src="img/tokyo.jpg" alt="Tokyo">
-        <h3>Futuristic Tokyo Odyssey</h3>
-        <p>Discover the captivating blend of tradition and innovation in Tokyo. Experience the city's bostlink streeds
-          and neon-lit nights, visit ancient temples and shrines, and savor the exquisite flavors of Japenese cuisine.
-        </p>
-        <div>
-          <button>
-            Buy Tour
-          </button>
-          <button>
-            More Info
-          </button>
-        </div>
-      </div>
-      <div>
-        <img src="img/kharkiv.jpg" alt="kharkiv" width="500">
-        <p>The most popular city of Ukraine among students. A lot of foreigners visit Kharkiv to get higher education
-        </p>
-        <div>
-          <button>
-            Buy Tour
-          </button>
-          <button>
-            More Info
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="experiences">
-      <h2>Share Your Experiences</h2>
-      <ul>
-        <li>Connect with fellow travelers around the world</li>
-        <li>Share your stories, tips, and recommendations</li>
-        <li>Upload photos and videos of your adventures</li>
-        <li> Participate in forums and discussions</li>
-        <li>Inspire others to embark on their own journeys</li>
-      </ul>
-      <button>Share</button>
-    </section>
-  </main>
-  <footer>
-    <p>
-      Traveling with us &copy; 2023. All Rights Reserved.
-    </p>
-  </footer>
+    </footer>
 </body>
 
 </html>
