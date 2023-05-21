@@ -222,3 +222,95 @@ body {
   color: #ffffff;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 890px) {
+  .header__title {
+    font-size: 1em;
+  }
+
+  .header__nav-item {
+    margin-left: 10px;
+  }
+
+  .header__nav {
+    font-size: 0.7em;
+  }
+
+  .tour-cards {
+    padding: 0.5rem;
+  }
+
+  .tour-card {
+    width: calc(50% - 1rem);
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .tour-card__description {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+
+  .tour-card__button {
+    font-size: 0.5em;
+    padding: 10px;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header__title {
+    font-size: 0.7em;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .section {
+    height: 30vh;
+  }
+
+  .section__title {
+    font-size: 0.7em;
+    margin-top: 25px;
+  }
+
+  .section__content {
+    gap: 20px;
+    width: 100%;
+    font-size: 0.5em;
+  }
+
+  .tour-card {
+    width: calc(60% - 1rem);
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+
+  .tour-card__description {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .section__list {
+    font-size: 0.5em;
+  }
+  
+  .section__title {
+    font-size: 0.7rem;
+    padding-top: 15px;
+  }
+
+  .section__btn {
+    font-size: 0.6em;
+    padding: 10px 0;
+    min-width: 10%;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
+  }
+}
