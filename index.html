@@ -18,6 +18,9 @@
                 <li class="header__nav-item"> <a href="#plan_tour" class="header__nav-link">Plan a tour</a></li>
                 <li class="header__nav-item"> <a href="#order_tour" class="header__nav-link">Order Tour</a></li>
                 <li class="header__nav-item"> <a href="#experience" class="header__nav-link">Experiences</a></li>
+                <li class="header__nav-item">
+                    <button class="header__nav-link cart-button">Cart (0)</button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -162,8 +165,23 @@
         </div>
     </div>
 
+    <!-- Cart modal -->
+    <div class="cart-modal" style="display:none;">
+        <div class="cart-modal__content">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be generated here -->
+            </div>
+            <div class="cart-total">
+                Total: <span class="cart-total__value">0</span>
+            </div>
+            <button class="cart-modal__close">Close</button>
+        </div>
+    </div>
+
     <script src="more_info.js"></script>
     <script src="buy_tour.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
