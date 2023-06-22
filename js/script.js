@@ -108,3 +108,39 @@ const sortedTours = tours.sort((a, b) => {
 })
 
 console.log(sortedTours)
+
+// localStorage
+
+const login = prompt("Введіть логін")
+
+if (login === "Admin") {
+  const password = prompt("Введіть пароль")
+
+  const inputData = {
+    login: login,
+    password: password
+  }
+
+  const storedData = JSON.parse(localStorage.getItem("userData")) || []
+  storedData.push(inputData)
+
+  localStorage.setItem("userData", JSON.stringify(storedData))
+
+  if (password === "12345") {
+    alert("Ласкава просимо")
+  } else {
+    alert("Невірний пароль")
+  }
+} else {
+  const incorrectInputData = {
+    login: login,
+    password: ""
+  }
+
+  const storedDataFail = JSON.parse(localStorage.getItem("incorrectInputData")) || []
+  storedDataFail.push(incorrectInputData)
+
+  localStorage.setItem("incorrectInputData", JSON.stringify(storedDataFail))
+
+  alert("Доступ заборонено")
+}
